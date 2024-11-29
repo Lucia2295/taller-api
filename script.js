@@ -8,7 +8,7 @@ fetchCats.addEventListener("click", async () => {
     const response = await fetch(apiUrl);
     const cats = await response.json();
 
-    catGallery.innerHTML = ""; // Clear previous images
+    catGallery.innerHTML = ""; 
     cats.forEach(cat => {
       const img = document.createElement("img");
       img.src = cat.url;
